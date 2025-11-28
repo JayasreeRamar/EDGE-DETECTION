@@ -29,7 +29,7 @@ Using Laplacian operator from cv2,detect the edges of the image and Using Canny 
 ```
 import cv2
 import matplotlib.pyplot as plt
-img = cv2.imread('rome.png')
+img = cv2.imread('/content/rome.jpeg')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 gray = cv2.GaussianBlur(gray, (3, 3), 0)
 sobelx = cv2.Sobel(gray, cv2.CV_64F, 1, 0, ksize=5)
@@ -71,9 +71,10 @@ plt.axis("off")
 plt.show()
 
 ```
-<img width="831" height="303" alt="image" src="https://github.com/user-attachments/assets/561cc5b8-e513-4cc7-9e92-237efebc9bc4" />
-<img width="830" height="302" alt="image" src="https://github.com/user-attachments/assets/89b0390a-4eac-4f12-8c7b-b046b5202dd7" />
-<img width="823" height="298" alt="image" src="https://github.com/user-attachments/assets/92b10172-29be-4d47-8fc2-1fb7013b047a" />
+<img width="898" height="299" alt="Screenshot 2025-11-28 215901" src="https://github.com/user-attachments/assets/3a462a48-bd81-405e-8423-dab58beee0e5" />
+
+
+
 
 ### LAPLACIAN EDGE DETECTOR
 ```
@@ -91,7 +92,8 @@ plt.show()
     plt.show()
 
 ```
-<img width="875" height="309" alt="image" src="https://github.com/user-attachments/assets/12e5a5bc-7a44-420f-a07f-e79945fac970" />
+<img width="869" height="305" alt="Screenshot 2025-11-28 215935" src="https://github.com/user-attachments/assets/bd743991-6028-4e5c-8e2f-90a09078b4eb" />
+
 
 ### CANNY EDGE DETECTOR
 ```
@@ -109,7 +111,8 @@ plt.axis("off")
 plt.show()
 
 ```
-<img width="836" height="289" alt="image" src="https://github.com/user-attachments/assets/f13aff43-b499-4fc8-a947-45d08caac173" />
+<img width="865" height="305" alt="Screenshot 2025-11-28 215946" src="https://github.com/user-attachments/assets/285a740e-f5c2-45a7-94ae-375274f58856" />
+
 
 ## Result:
 Thus the edges are detected using Sobel, Laplacian, and Canny edge detectors.
